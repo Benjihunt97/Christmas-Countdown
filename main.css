@@ -1,0 +1,59 @@
+body {
+    display: grid;
+    place-items: center;
+
+    background-image: url('https://media.istockphoto.com/id/1433126423/photo/christmas-background-composition-with-candy-canes-colorful-balls-wrapped-gifts-wreaths-and.jpg?s=612x612&w=0&k=20&c=gpSQOEJNAVCyv4Fu8JkIfkYO9VhPMqNjqyS9fDSOvgA=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    height: 100vh;
+    font-family: 'Mountains of Christmas', serif;
+}
+
+.float-img {
+    position: absolute;
+    left: -6rem;
+    top: -6rem;
+
+    width: 500px;
+}
+
+.container {
+    position: relative;
+    background-image: url('https://media.istockphoto.com/id/1779920957/photo/abstract-christmas-tree-background.jpg?s=612x612&w=0&k=20&c=XUhP1daPIPhFkOuIcnwLppi1hdeplB8pvcLNMiJMQrY=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+
+    width: 80%;
+    max-width: 1000px;
+
+    padding: 30px 10px;
+
+    text-align: center;
+}
+
+.timer {
+    margin-inline: auto;
+    width: fit-content;
+
+}
+
+.timer-item {
+    width: 200px;
+}
+
+@media (max-width: 393px) {
+    body {
+        height: 150dvh;
+    }
+    .container {
+        margin-block: 20px;
+    }
+
+    .float-img {
+        top: -5rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
